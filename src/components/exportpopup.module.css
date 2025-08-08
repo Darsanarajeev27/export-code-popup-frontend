@@ -4,7 +4,6 @@
 body{
     overflow: hidden;
 }
-
 .overlay{
     position: fixed;
     top: 0;
@@ -139,8 +138,6 @@ body{
     color: #FBFBFB;
     gap: 2px;
 }
-
-
 .exportIcon{
     width: 20px;
     height: 20px;
@@ -160,17 +157,38 @@ body{
     justify-content: center;
     color: #FFFFFF;
 }
-.checkBoxLine{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 8px 0;
-    font-size: 13px;
+.checkBoxLine {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  font-size: 13px;
 }
-.checkBoxLine input{
-    accent-color:#665DC0;
-    width: 18.67px;
-    height: 18.67px;
+.checkBoxLine input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18.67px;
+  height: 18.67px;
+  border: 2px solid #AFAFAF;
+  border-radius: 4px;
+  background-color: transparent; 
+  cursor: pointer;
+  position: relative;
+}
+.checkBoxLine input[type="checkbox"]:checked {
+  background-color: #665DC0;
+  border: #665DC0 2px solid;
+}
+.checkBoxLine input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 .downloadBtnContainer{
     width: 428px;
