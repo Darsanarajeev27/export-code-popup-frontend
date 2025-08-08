@@ -21,11 +21,5 @@ This is a simple frontend interface to download either an HTML/CSS project or a 
 3. Choose between “HTML & CSS” and “NextJS” tabs
 4. Click the download button to get the respective project
 
-## Folder Structure
-src/
-├── components/
-│ └── ProjectDownload.jsx
-├── styles/
-│ └── ProjectDownload.module.css
 
 
